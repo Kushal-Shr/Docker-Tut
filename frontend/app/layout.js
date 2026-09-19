@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Docker Dash Cooking Game",
+  title: "Dash Cooking Game",
   description: "A fun cooking game to learn Docker!",
 };
 
@@ -22,7 +22,12 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <div className="bg-orb orb-1"></div>
+        <div className="bg-orb orb-2"></div>
+        <div className="bg-orb orb-3"></div>
+        {children}
+      </body>
     </html>
   );
 }
